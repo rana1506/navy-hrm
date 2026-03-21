@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 export const connectDB = async () => {
-  const uri = process.env.MONGO_URI || 'mongodb://localhost:27017/navy_hrm';
+  const uri = process.env.MONGO_URI || 'mongodb+srv://rana1506:rana1506@cluster0.ogqjc4o.mongodb.net/navy_hrm?appName=Cluster0';
   try {
     await mongoose.connect(uri, { dbName: 'navy_hrm' });
     console.log('MongoDB connected');
